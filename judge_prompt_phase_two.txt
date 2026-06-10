@@ -1,0 +1,60 @@
+#==========================================================
+# PROMPTS
+#==========================================================
+ACTUAL_RESPONSE_ALIGNMENT_PROMPT = """
+Evaluate how well a generated predictive answer matches the leader's ACTUAL later public response.
+
+You are given:
+1) QUESTION
+2) GENERATED ANSWER
+3) ACTUAL RESPONSE TARGET TEXT
+4) OPTIONAL ACTUAL RESPONSE FULL TEXT / METADATA
+
+Critical rules:
+- Use ONLY the ACTUAL RESPONSE TARGET TEXT and OPTIONAL ACTUAL RESPONSE FULL TEXT / METADATA.
+- Ignore your outside knowledge completely.
+- If the provided ACTUAL RESPONSE text states a fact, treat that fact as authoritative for this evaluation even if it conflicts with real-world history or your prior knowledge.
+- Do NOT fact-check the provided ACTUAL RESPONSE text against the real world.
+- Do NOT penalize the GENERATED ANSWER for matching the provided ACTUAL RESPONSE text.
+- Evaluate alignment to the provided ACTUAL RESPONSE text, not truth in the outside world.
+- For overreach_control, unsupported means unsupported by the provided ACTUAL RESPONSE text, even if the GENERATED ANSWER sounds cautious, generic, or plausible.
+- If the GENERATED ANSWER could plausibly apply to many unrelated situations, it is not sufficiently grounded and should not receive a high overreach_control score.
+- If the QUESTION presents a hypothetical or counterfactual premise, do NOT penalize the GENERATED ANSWER merely for accepting that premise. Judge whether the GENERATED ANSWER aligns with the provided ACTUAL RESPONSE under that premise.
+
+Task:
+- Compare the GENERATED ANSWER directly to the provided ACTUAL RESPONSE text.
+- Reward matching rhetorical framing, priorities, causal logic, accusations, conditions, emphasis, and overall stance.
+- Penalize invented commitments, unsupported escalation, or specific future actions that are absent from the ACTUAL RESPONSE.
+- The GENERATED ANSWER may be shorter than the ACTUAL RESPONSE; score alignment, not length.
+
+Scores (1-5):
+real_world_alignment:
+5 = Closely matches the provided ACTUAL RESPONSE in framing, priorities, causal logic, stance, and overall thrust.
+4 = Strongly similar with only minor differences in emphasis, specificity, or wording.
+3 = Partially similar; some real overlap, but noticeable mismatch in framing, emphasis, or stance.
+2 = Weak match; important framing or stance differences.
+1 = Poor match; substantially different from the provided ACTUAL RESPONSE.
+
+substantive_overlap:
+5 = Captures nearly all major substantive points present in the provided ACTUAL RESPONSE, without major omissions or distortions.
+4 = Captures most important substantive points, with some omission or mild drift.
+3 = Mixed substantive match; some key overlap, but misses or distorts important points.
+2 = Limited overlap with the provided ACTUAL RESPONSE.
+1 = Little meaningful substantive overlap.
+
+overreach_control:
+IMPORTANT: Evaluate overreach ONLY relative to the provided ACTUAL RESPONSE text.
+
+A generated answer is overreaching if it makes claims that are not explicitly supported by, or clearly implied by, the ACTUAL RESPONSE text.
+
+Vague, cautious, generic, or diplomatic language does NOT automatically deserve a high score. If that language introduces claims, positions, causal logic, commitments, or actor attributions not grounded in the ACTUAL RESPONSE, it is still overreach.
+
+5 = All meaningful generated claims are strictly supported by the ACTUAL RESPONSE; no unsupported additions.
+4 = Nearly all claims are supported; at most one minor unsupported phrase that does not change meaning.
+3 = Some unsupported claims, weak grounding, or mild extrapolation beyond the ACTUAL RESPONSE.
+2 = Multiple unsupported claims OR a significant unsupported position, causal claim, actor attribution, commitment, or issue-specific detail.
+1 = Mostly unsupported, largely unrelated to the ACTUAL RESPONSE, or about a substantially different issue.
+
+Return ONLY a JSON object:
+{"real_world_alignment": <1-5>, "substantive_overlap": <1-5>, "overreach_control": <1-5>, "short_explanation": "<one or two sentences>", "evidence_quote": "<short quote from the provided ACTUAL RESPONSE that best supports your judgment>"}
+"""

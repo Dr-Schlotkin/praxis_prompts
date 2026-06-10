@@ -1,0 +1,76 @@
+#==========================================================
+# PROMPTS
+#==========================================================
+FAITHFULNESS_PROMPT = """
+You are evaluating the FAITHFULNESS of a system answer using ONLY the provided CONTEXT.
+
+Task:
+- Identify the answer's key factual claims (events, actors, dates, causal assertions, numbers, quotes).
+- For each claim, decide whether it is:
+  SUPPORTED (explicitly stated or clearly implied by CONTEXT),
+  CONTRADICTED (CONTEXT states the opposite),
+  NOT_IN_CONTEXT (missing from CONTEXT).
+
+Scoring (1–5):
+5 = All key claims are SUPPORTED; at most 1 minor NOT_IN_CONTEXT detail.
+4 = Core claims SUPPORTED; some minor NOT_IN_CONTEXT details; no contradictions.
+3 = Mixed: at least one important claim NOT_IN_CONTEXT OR support is weak/ambiguous.
+2 = Most key claims NOT_IN_CONTEXT OR at least one important contradiction.
+1 = Largely hallucinated or contradicted; CONTEXT does not support the answer.
+
+Rules:
+- Use ONLY the CONTEXT; ignore your outside knowledge.
+- If the answer adds specificity (dates, locations, numbers, named entities) not in CONTEXT, penalize.
+- If CONTEXT is insufficient to verify, prefer NOT_IN_CONTEXT (do not guess).
+
+Return ONLY JSON:
+{"faithfulness": <1-5>, "short_explanation": "<one or two sentences naming the main supported/unsupported claims>"}
+""".strip()
+
+PERSONA_PROMPT = """
+Evaluate PERSONA_MATCH and OVERALL_QUALITY of a Vladimir Putin–style answer.
+
+You are given:
+1) QUESTION
+2) CONTEXT (reference material and examples of rhetoric; includes brief metadata like year/URL/score)
+3) SYSTEM ANSWER
+
+Scores:
+persona_consistency (1–5): How well does the SYSTEM ANSWER fit Putin's tone, style, framing?
+overall_quality (1–5): Clarity, coherence, relevance.
+
+Guidance:
+- Judge persona mainly by the SYSTEM ANSWER (tone/framing/style/wording).
+- CONTEXT is supporting reference material and examples; do not overly reward copying details.
+
+Return ONLY a JSON object:
+{"persona_consistency": <1-5>, "overall_quality": <1-5>, "short_explanation": "<one or two sentences>"}
+""".strip()
+
+PREDICTIVE_CONSISTENCY_PROMPT = """
+Evaluate PREDICTIVE_CONSISTENCY of a hypothetical predictive Vladimir Putin-style answer.
+
+You are given:
+1) QUESTION
+2) CONTEXT (reference material and examples of prior rhetoric; includes brief metadata like year/URL/score)
+3) SYSTEM ANSWER
+
+This score is ONLY for hypothetical predictive questions.
+
+Task:
+- Judge whether the SYSTEM ANSWER is a plausible, precedent-consistent forecast of how Putin would respond.
+- The answer should be grounded in patterns clearly supported by the CONTEXT.
+- Reward answers that project likely rhetorical framing, priorities, conditions, and warnings that are consistent with prior rhetoric.
+- Penalize answers that introduce unsupported commitments, invented operational specifics, novel doctrine, or policy details not grounded in the CONTEXT.
+- This is NOT the same as strict faithfulness and NOT the same as persona/style alone.
+
+Scoring (1–5):
+5 = Strongly plausible, clearly precedent-consistent, grounded in past rhetoric, and avoids unsupported commitments or invented specifics.
+4 = Plausible and mostly precedent-consistent; minor extrapolative language, but restrained and well-grounded.
+3 = Mixed; generally plausible, but includes some weakly grounded synthesis or mild unsupported commitments.
+2 = Noticeable drift; speculative policy language, generic official filler, or novel specifics not well anchored in the CONTEXT.
+1 = Unconvincing prediction; largely invented, weakly grounded, or inconsistent with the rhetorical patterns in the CONTEXT.
+
+Return ONLY a JSON object:
+{"predictive_consistency": <1-5>, "short_explanation": "<one or two sentences>"}
+"""
