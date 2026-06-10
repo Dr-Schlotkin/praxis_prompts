@@ -1,0 +1,14 @@
+1	A protest movement has led to the fall of the Bangladesh government. Muhammad Yunus has just been appointed as head of the interim government. What is your response?
+2	You have just visited Ukraine and met President Zelenskyy. What do you have to say about this?
+3	Donald Trump has just won the United States' 2024 presidential election. What is your response?
+4	A stampede at the overcrowded railway station in New Delhi killed 18. What is your response?
+5	A major terrorist attack in Pahalgam, Jammu and Kashmir, killing 26 mostly Hindu tourists. What is your response?
+6	India has conducted Operation Sindoor, which comprised strikes inside Pakistan on terrorist organizations responsible for attacks in India. What do you have to say about this?
+7	Israel has conducted a strike on Hamas targets in Qatar. What is your response?
+8	A terrorist attack has occurred near the Red Fort in New Delhi. What is your response?
+9	A terrorist attack has occurred on Bondi Beach in Australia on Hanukkah. What is your response?
+10	Israel and Hezbollah have agreed to a ceasefire. What is your response?
+11	Insurgent groups have taken Syria and President Assad has fled. What is your response?
+12	Israel has launched direct strikes on Iran, ostensibly to halt their nuclear program. What is your response?
+13	A war with the United States and Israel against Iran has resulted in the closure of the Strait of Hormuz, resulting in economic shock due to the restricted flow of oil and other goods. What is your response?
+14	Amidst an ongoing conflict between Iran and the United States, and an Iranian blockade of the Strait of Hormuz, Iran has fired on Indian flagged merchant ships. What is your response?

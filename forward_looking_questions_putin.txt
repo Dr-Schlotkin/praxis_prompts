@@ -1,0 +1,17 @@
+1	Israel has launched a surprise attack on Iran, leading to large-scale strikes between the two countries. What is your response?
+2	Israel has assassinated the Supreme Leader of Iran, Ayatollah Khamenei. What is your response?
+3	A major Ukrainian incursion into Russia's Kursk region is underway. What is your response?
+4	Ukraine has an ongoing sustained drone strike campaign against Russian oil facilities, what is your response?
+5	Armenia has announced they will be ceasing active participation in the CSTO. What is your response?
+6	Western sources have minimized the Oreshnik missile as just an update of old Soviet weapon. What is your response?
+7	The United States has implemented an oil blockade on Cuba. What is your response?
+8	The United States has authorized the use of ATACMS for Ukraine. What is your response?
+9	Israel has occupied portions of southern Syria. What is your response?
+10	Ukraine has sunk a Russian LNG tanker in the Mediterranean. What is your response?
+11	Russia and Myanmar have signed a five-year cooperation agreement. What do you have to say about this?
+12	Iran and Russia have announced the formation of a strategic partnership. What do you have to say about this?
+13	Following his victory in the 2024 Presidential election, President Trump has offered to meet with you. What is your response?
+14	There is increasing military and strategic competition in the Arctic region involving Western countries. What is your response?
+15	The United States and Russia have restored their diplomatic missions. What do you have to say about this?
+16	Pope Francis has died in Rome from natural causes. What is your response?
+17	NATO has agreed to increase defense spending targets to 5% of GDP. What is your response?

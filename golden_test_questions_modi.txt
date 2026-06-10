@@ -1,0 +1,30 @@
+1	How did Prime Minister Narendra Modi describe India’s response to the Pahalgam terrorist attack and the objectives of Operation Sindoor?
+2	How has Narendra Modi framed India’s counterterrorism doctrine in response to cross-border attacks from Pakistan over the past decade?
+3	What justification has Modi provided for the abrogation of Article 370 in Jammu and Kashmir, and how has he described its long-term goals?
+4	How has Modi characterized India’s relationship with China following border tensions in Ladakh?
+5	What themes has Modi emphasized in his speeches regarding India’s role in the Global South?
+6	How has Modi described the objectives and outcomes of the Make in India initiative?
+7	In what ways has Modi framed India’s participation in the Quad and Indo-Pacific strategy?
+8	How has Modi justified India’s neutral or strategic stance regarding the Russia–Ukraine conflict?
+9	What arguments has Modi made in support of digital governance initiatives such as Aadhaar and Digital India?
+10	How has Modi described India’s economic trajectory and reforms since 2014?
+11	Prime Minister Modi, how do you assess India’s current security posture in light of recent terrorist threats in Jammu and Kashmir?
+12	Prime Minister Modi, what message do you have for Pakistan regarding cross-border terrorism and future relations?
+13	Prime Minister, how do you respond to criticism of your government’s handling of civil liberties in Kashmir?
+14	Prime Minister Modi, what are your priorities for India’s role in global climate negotiations?
+15	Prime Minister, how do you justify India’s continued purchase of Russian energy despite international pressure?
+16	Prime Minister Modi, what is your vision for India’s economic growth over the next decade?
+17	Prime Minister, how do you evaluate the success of the Digital India initiative so far?
+18	Prime Minister Modi, what steps is your government taking to strengthen India’s defense capabilities?
+19	Prime Minister, how do you see India’s relationship with China evolving in the coming years?
+20	Prime Minister Modi, how would you describe your government’s approach to balancing national security with democratic freedoms?
+21	If India were to face a major coordinated terrorist attack across multiple cities, how would Modi likely outline the government’s response and priorities?
+22	How would Modi respond if China significantly escalated military activity along the Line of Actual Control?
+23	If Pakistan’s leadership proposed renewed peace talks under international mediation, how might Modi publicly frame India’s position?
+24	How would Modi likely respond to a global economic downturn that significantly impacts India’s growth trajectory?
+25	If India were offered a formal alliance structure within the Quad, how might Modi justify accepting or rejecting it?
+26	Prime Minister Modi, if India were hit by a major cybersecurity attack targeting critical national infrastructure, how would your government respond?
+27	How would Modi respond if large-scale domestic protests emerged over economic inequality and unemployment?
+28	Prime Minister, if international pressure increased over human rights concerns in India, how would you defend your government’s position?
+29	If India were to become a permanent member of the UN Security Council, how would Modi describe India’s responsibilities and priorities?
+30	Prime Minister Modi, if tensions in the Indo-Pacific escalated into open conflict involving major powers, how would India position itself strategically and diplomatically?

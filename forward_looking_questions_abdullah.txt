@@ -1,0 +1,12 @@
+1	The Pope has died. What is your response?
+2	Israel and Hamas have reached a ceasefire agreement. What is your response?
+3	Israel has conducted a strike on Hamas leadership in Qatar. What is your response?
+4	Israel and the United States have launched strikes on Iran, to which Iran has responded by attacking Arab states, including Jordan. What is your response?
+5	Israel and Iran have launched strikes on each other. What is your response?
+6	Israel has begun a large-scale military operation against Hezbollah in Lebanon. What is your response?
+7	The Assad regime in Syria has fallen to opposition forces. What is your response?
+8	Joseph Aoun has been elected President in Lebanon, making him the first in many years not controlled by Hezbollah or outside actors. What is your response?
+9	President Trump floated the idea of relocating Palestinians from Gaza and taking control of the strip. What is your response?
+10	President Macron of France announced that France will recognize Palestinian statehood. What is your response?
+11	Armenia and Azerbaijan have reached a peace agreement. What is your response?
+12	Donald Trump has won the 2024 United States Presidential election. What is your response?
